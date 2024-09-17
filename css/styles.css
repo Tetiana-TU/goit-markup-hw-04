@@ -11,6 +11,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
@@ -88,9 +91,15 @@ img {
 }
 .sect-effect {
   background: #2e2f42;
+  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: none;
   padding-top: 188px;
   padding-bottom: 188px;
+  justify-items: center;
 }
+
 .blok-text {
   font-weight: 700;
   font-size: 56px;
@@ -191,6 +200,7 @@ img {
 .team {
   display: flex;
   gap: 24px;
+  
 }
 .all-team {
   background-color: #f4f4fd;
@@ -199,6 +209,8 @@ img {
   background-color: #fff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+background: #fff;
 }
 .cont-h-team {
   padding: 32px 0 32px;
@@ -238,6 +250,11 @@ img {
 }
 .img-portfolio {
   width: calc((100% - 48px) / 3);
+ transform: translate(100%);
+ transition: transform 250ms; 
+}
+.img-portfolio:hover {box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 .portf1 {
   padding: 32px 16px;
